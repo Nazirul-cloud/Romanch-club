@@ -29,8 +29,12 @@ h2{
 
 .header-container{
 
-    background-color: #2D25A0;
-    
+    background-color: #2D25A0; 
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 .header-left  a{
@@ -52,15 +56,6 @@ h2{
     margin-top: 42px;
    
 }
-.header{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-
-
-}
-
-
 
 /* Banner Styles */
 .banner-container{
@@ -70,21 +65,7 @@ h2{
     align-items: center;
     height: 677px;
     margin-bottom: 70px;
-
 }
-.banner-photo{
-   
-    transition: transform .2s;
-    
-    
-}
-.banner-photo:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-    
-  }
-
 .watch-button{
     background: #E02C6D;
     width: 168px;
@@ -92,7 +73,18 @@ h2{
     font-size: 20px;
     color: white;
 }
-
+.banner-photo{
+   
+    transition: transform .2s;
+    
+}
+.banner-photo:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+    
+  }
+  
  .banner-photo img{
     width: 556.01px;
     height: 438px;
@@ -127,6 +119,12 @@ h2{
     margin: 15px;
 }
 
+.player-photo img{
+    width: 300px;
+    height: 256px;
+    
+}
+
 .player-info{
    
     display: flex;
@@ -136,12 +134,6 @@ h2{
     margin: 15px; 
 }
 
-.player img{
-    width: 300px;
-    height: 256px;
-  
-    
-}
 
 /*----------------------
     HIGHLIGITS STYLES 
@@ -152,20 +144,17 @@ h2{
     justify-content: space-evenly;
     align-items: center;
     height: 500px;
-    
-    
  }
+
 .highlight-text{
     width: 469px;
     height: 309px;
     margin-left: 66px;
-  
 }
 
  .highlight-photo img{
     width: 567px;
     height: 427px;
-    
  }
 
 
@@ -203,13 +192,25 @@ h2{
     height: 32px;
  }
 
- /* Mobile Decices */
+ /*--------------------------- 
+        Mobile Decices
+ --------------------------- */
 
- @media only screen and (max-width:768px) {
-   *{
-       margin: 0;
-       padding: 0;
-   }
+ @media only screen and (max-width:667px) {
+
+    p{
+        font-size: 10px;
+        text-align: left;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
    .header-container{
        display: none;
    }
@@ -220,20 +221,12 @@ h2{
     .players{
         grid-template-columns:repeat(1, 1fr) ;
     }
-    h1{
-        font-size: 36px;
-    }
+   
     .banner-photo img{
         width: 329px;
         height: 259.17px;
     }
-    /* ..................... */
-    p{
-        font-size: 16px;
-    }
-    h2{
-        font-size: 30px;
-    }
+
     .highlight-text{
         width: 100%;
     }
@@ -242,10 +235,5 @@ h2{
         height: 248px;
         margin-top: 29px;
     }
-    /* iframe{
-        width: 300px;
-        height: 256px;  
-    } */
-    
-
+   
 }
