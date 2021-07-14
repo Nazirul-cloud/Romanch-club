@@ -41,13 +41,13 @@ h2{
     color:#FFFFFF;
     font-size: 32px;
     text-decoration: none;
-    margin: 36px;
+    margin: 17px;
     
 }
 .header-right a{
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 15px;
 
 }
 .header-right{
@@ -60,7 +60,7 @@ h2{
 /* Banner Styles */
 .banner-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #2D25A0;
     align-items: center;
     height: 677px;
@@ -111,7 +111,6 @@ h2{
 .player{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     
-  
 }
 
 .player-photo{
@@ -185,7 +184,7 @@ h2{
  }
  
  .footer-logo img{
-    width: 500.87px;
+    width: 490.87px;
     height: 110px;
  }
  .social-icon img{
